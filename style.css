@@ -1,0 +1,117 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*{
+  margin: 0;
+}
+/*Nao//mexer*/
+.card>div>img{
+  margin: 15px;
+  height: 50%;
+  width: 90%;
+  border-radius: 10px;
+}
+hr{
+  border-top-color: darkgray;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  height: 1px;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+#titulo{
+  margin-left: 15px;
+  margin-bottom: 5px;
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+  font-family: 'Outfit' , sans-serif;
+  font-weight: 600;
+}
+#texto{
+  margin-left: 15px;
+  margin-right: 3px;
+  margin-top: 5px;
+  font-weight: 300;
+  font-family: 'Outfit' , sans-serif;
+}
+#ac{
+  margin-left: 15px;
+  margin-right: 17px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#ac>div>p{
+  float: right; 
+  padding-left: 5px;
+  font-weight: 600;
+  font-family: 'Outfit' , sans-serif;
+}
+#imga{
+  margin-top: 10px;
+  margin-left: 15px;
+  width: 27px;
+  border: 1px solid white; 
+  border-radius: 50px;
+}
+#partedeBaixo{
+  margin-left: 10px;
+}
+body{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: hsl(217, 54%, 11%);
+}
+.card{
+  margin-top: 5%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  width: 280px;
+  height: 480px;
+  background: hsl(216, 50%, 16%);
+  box-shadow: 0px 0px 40px 5px #000000;
+  border-radius: 10px;
+  color: hsl(215, 51%, 70%);
+}
+#imagemviw{
+  opacity: 0%;
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  padding: 39%;
+  background-color: rgba(0, 255, 247, 0.5);;
+}
+#text{
+  position: relative;
+}
+#final{
+  display:inline-block;
+  font-family: 'Outfit' ,sans-serif; 
+  font-weight: 400;
+  color: aliceblue;
+}
+/*Design Responsivo*/
+@media screen and (max-width:1023px) {
+  .card{
+    margin-top: 10%;
+    width: 300px;
+  }
+}
+/*APÓS*/
+#titulo:hover{
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+#imagemviw:hover{
+  opacity: 100%;
+  cursor: pointer;
+}
+#final:hover{
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+/**/
