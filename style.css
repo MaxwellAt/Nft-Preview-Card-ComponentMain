@@ -1,40 +1,13 @@
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
-* {
-  margin: 0;
-}
-
-/* --- Componente Card --- */
-
-.card {
-  margin-top: 5%;
-  margin-right: auto;
-  margin-left: auto;
-  overflow: hidden;
-  width: 280px;
-  height: auto;
-  background: hsl(216, 50%, 16%);
-  box-shadow: 0px 0px 40px 5px #000000;
-  border-radius: 10px;
-  color: hsl(215, 51%, 70%);
-}
-
-.card img {
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*{  margin: 0;
+}/*Nao//mexer*/
+.card>div>img{
   margin: 15px;
   height: 50%;
   width: 90%;
-  border-radius: 10px;
-}
-
-.card hr {
-  border-top-color: darkgray;
+  border-radius: 10px;}
+hr{  border-top-color: darkgray;
   border-left-color: transparent;
   border-right-color: transparent;
   border-bottom-color: transparent;
@@ -42,26 +15,20 @@
   margin-left: 3%;
   margin-right: 3%;
 }
-
-.card .title {
-  margin-left: 15px;
+#titulo{  margin-left: 15px;
   margin-bottom: 5px;
   color: hsl(0, 0%, 100%);
   font-size: 18px;
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Outfit' , sans-serif;
   font-weight: 600;
 }
-
-.card .description {
-  margin-left: 15px;
+#texto{  margin-left: 15px;
   margin-right: 3px;
   margin-top: 5px;
   font-weight: 300;
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Outfit' , sans-serif;
 }
-
-.card .actions {
-  margin-left: 15px;
+#ac{  margin-left: 15px;
   margin-right: 17px;
   display: grid;
   grid-template-columns: auto auto;
@@ -69,77 +36,27 @@
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
-.card .actions div p {
-  float: right;
+#ac>div>p{  float: right; 
   padding-left: 5px;
   font-weight: 600;
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Outfit' , sans-serif;
 }
-
-.card .author-image {
-  margin-top: 10px;
+#imga{  margin-top: 10px;
   margin-left: 15px;
   width: 27px;
-  border: 1px solid white;
+  border: 1px solid white; 
   border-radius: 50px;
 }
-
-.card .bottom {
+#partedeBaixo{
   margin-left: 10px;
 }
-
-/* --- Outros --- */
-
-body {
+body{
   display: block;
   width: 100%;
   height: 100%;
   background: hsl(217, 54%, 11%);
 }
-
-#imagemviw {
-  opacity: 0%;
-  position: absolute;
-  height: 35px;
-  width: 35px;
-  padding: 39%;
-  background-color: rgba(0, 255, 247, 0.5);
-}
-
-#text {
-  position: relative;
-}
-
-#final {
-  display: inline-block;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 400;
-  color: aliceblue;
-}
-
-/* --- Design Responsivo --- */
-
-@media screen and (max-width: 1023px) {
-  .card {
-    margin-top: 10%;
-    width: 300px;
-  }
-}
-
-/* --- Estados --- */
-
-.card .title:hover {
-  color: hsl(178, 100%, 50%);
-  cursor: pointer;
-}
-
-.card .author-image:hover + #imagemviw {
-  opacity: 100%;
-  cursor: pointer;
-}
-/* classes do HTML anterior */
-.card {
+.card{
   margin-top: 5%;
   margin-right: auto;
   margin-left: auto;
@@ -151,109 +68,36 @@ body {
   border-radius: 10px;
   color: hsl(215, 51%, 70%);
 }
-
-.card__image img {
-  margin: 15px;
-  height: 50%;
-  width: 90%;
-  border-radius: 10px;
-}
-
-.card__divider {
-  border-top-color: darkgray;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  border-bottom-color: transparent;
-  height: 1px;
-  margin-left: 3%;
-  margin-right: 3%;
-}
-
-.card__title {
-  margin-left: 15px;
-  margin-bottom: 5px;
-  color: hsl(0, 0%, 100%);
-  font-size: 18px;
-  font-family: 'Outfit', sans-serif;
-  font-weight: 600;
-}
-
-.card__content {
-  margin-left: 15px;
-  margin-right: 3px;
-  margin-top: 5px;
-  font-weight: 300;
-  font-family: 'Outfit', sans-serif;
-}
-
-.card__actions {
-  margin-left: 15px;
-  margin-right: 17px;
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-between;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.card__action {
-  float: right;
-  padding-left: 5px;
-  font-weight: 600;
-  font-family: 'Outfit', sans-serif;
-}
-
-.card__image-icon {
-  margin-top: 10px;
-  margin-left: 15px;
-  width: 27px;
-  border: 1px solid white;
-  border-radius: 50px;
-}
-
-.card__bottom {
-  margin-left: 10px;
-}
-
-.card__title:hover {
-  color: hsl(178, 100%, 50%);
-  cursor: pointer;
-}
-
-.card__image-icon:hover + .card__image-overlay {
-  opacity: 100%;
-  cursor: pointer;
-}
-
-.card__action:hover {
-  cursor: pointer;
-  color: hsl(178, 100%, 50%);
-}
-
-.card__image-overlay {
-  opacity: 0%;
+#imagemviw{  opacity: 0%;
   position: absolute;
   height: 35px;
   width: 35px;
   padding: 39%;
-  background-color: rgba(0, 255, 247, 0.5);
-}
-
-.card__text {
-  position: relative;
-}
-
-.card__final {
-  display: inline-block;
-  font-family: 'Outfit', sans-serif;
+  background-color: rgba(0, 255, 247, 0.5);;}
+#text{
+  position: relative;}
+#final{  display:inline-block;
+  font-family: 'Outfit' ,sans-serif; 
   font-weight: 400;
   color: aliceblue;
-}
-
-/*Design Responsivo*/
+}/*Design Responsivo*/
 @media screen and (max-width:1023px) {
-  .card {
+  .card{
     margin-top: 10%;
     width: 300px;
   }
 }
+/*APÓS*/
+#titulo:hover{
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+#imagemviw:hover{
+  opacity: 100%;
+  cursor: pointer;
+}
+#final:hover{
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+/**/
