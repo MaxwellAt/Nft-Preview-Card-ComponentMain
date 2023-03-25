@@ -1,16 +1,17 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-*{
+/* ----------- GERAL ----------- */
+
+* {
   margin: 0;
 }
-/*Nao//mexer*/
-.card>div>img{
-  margin: 15px;
-  height: 50%;
-  width: 90%;
-  border-radius: 10px;
+
+body {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: hsl(217, 54%, 11%);
 }
-hr{
+
+hr {
   border-top-color: darkgray;
   border-left-color: transparent;
   border-right-color: transparent;
@@ -19,53 +20,10 @@ hr{
   margin-left: 3%;
   margin-right: 3%;
 }
-#titulo{
-  margin-left: 15px;
-  margin-bottom: 5px;
-  color: hsl(0, 0%, 100%);
-  font-size: 18px;
-  font-family: 'Outfit' , sans-serif;
-  font-weight: 600;
-}
-#texto{
-  margin-left: 15px;
-  margin-right: 3px;
-  margin-top: 5px;
-  font-weight: 300;
-  font-family: 'Outfit' , sans-serif;
-}
-#ac{
-  margin-left: 15px;
-  margin-right: 17px;
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-between;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-#ac>div>p{
-  float: right; 
-  padding-left: 5px;
-  font-weight: 600;
-  font-family: 'Outfit' , sans-serif;
-}
-#imga{
-  margin-top: 10px;
-  margin-left: 15px;
-  width: 27px;
-  border: 1px solid white; 
-  border-radius: 50px;
-}
-#partedeBaixo{
-  margin-left: 10px;
-}
-body{
-  display: block;
-  width: 100%;
-  height: 100%;
-  background: hsl(217, 54%, 11%);
-}
-.card{
+
+/* ----------- CARD ----------- */
+
+.card {
   margin-top: 5%;
   margin-right: auto;
   margin-left: auto;
@@ -77,23 +35,110 @@ body{
   border-radius: 10px;
   color: hsl(215, 51%, 70%);
 }
-#imagemviw{
+
+.card>div>img {
+  margin: 15px;
+  height: 50%;
+  width: 90%;
+  border-radius: 10px;
+}
+
+/* ----------- TÍTULO ----------- */
+
+#titulo {
+  margin-left: 15px;
+  margin-bottom: 5px;
+  color: hsl(0, 0%, 100%);
+  font-size: 18px;
+  font-family: 'Outfit' , sans-serif;
+  font-weight: 600;
+}
+
+#titulo:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+/* ----------- TEXTO ----------- */
+
+#texto {
+  margin-left: 15px;
+  margin-right: 3px;
+  margin-top: 5px;
+  font-weight: 300;
+  font-family: 'Outfit' , sans-serif;
+}
+
+/* ----------- AC ----------- */
+
+#ac {
+  margin-left: 15px;
+  margin-right: 17px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#ac>div>p {
+  float: right; 
+  padding-left: 5px;
+  font-weight: 600;
+  font-family: 'Outfit' , sans-serif;
+}
+
+/* ----------- IMG ----------- */
+
+#imga {
+  margin-top: 10px;
+  margin-left: 15px;
+  width: 27px;
+  border: 1px solid white; 
+  border-radius: 50px;
+}
+
+/* ----------- IMAGEMVIW ----------- */
+
+#imagemviw {
   opacity: 0%;
   position: absolute;
   height: 35px;
   width: 35px;
   padding: 39%;
-  background-color: rgba(0, 255, 247, 0.5);;
+  background-color: rgba(0, 255, 247, 0.5);
 }
-#text{
-  position: relative;
+
+#imagemviw:hover {
+  opacity: 100%;
+  cursor: pointer;
 }
-#final{
+
+/* ----------- FINAL ----------- */
+
+#final {
   display:inline-block;
   font-family: 'Outfit' ,sans-serif; 
   font-weight: 400;
   color: aliceblue;
 }
+
+#final:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+/* ----------- RESPONSIVO ----------- */
+
+@media screen and (max-width:1023px) {
+  .card {
+    margin-top: 10%;
+    width: 300px;
+  }
+}
+
+/* ----------- ATRIBUIÇÃO ----------- */
+
 /*Design Responsivo*/
 @media screen and (max-width:1023px) {
   .card{
